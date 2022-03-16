@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Labs/ml-latest/movies.csv
+Labs/ml-latest/ratings.csv
