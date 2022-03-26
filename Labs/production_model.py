@@ -3,10 +3,10 @@ import joblib  as jl
 from sklearn.ensemble import VotingClassifier
 
 # 1. Read in the tests samples
-test_df = pd.read_csv("test_samples.csv", index_col = 0)
+test_df = pd.read_csv("Files/test_samples.csv", index_col = 0)
 
 # 2. Read in the trained model
-model = jl.load("trained_model.pkl")
+model = jl.load("Files/trained_model.pkl")
 
 # 3. Splitting the data into X and y
 X = test_df.drop(["id","cardio"], axis = 1)
@@ -24,4 +24,4 @@ predictions_df = pd.DataFrame({
                             })
 
 # 6. Exporting the dataframe as csv
-predictions_df.to_csv("prediction.csv")
+predictions_df.to_csv("Files/prediction.csv")
