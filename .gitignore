@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 Labs/ml-latest/movies.csv
 Labs/ml-latest/ratings.csv
+Labs/Data/ml-latest/movies.csv
+Labs/Data/ml-latest/ratings.csv
